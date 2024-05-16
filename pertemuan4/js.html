@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1,0">
+        <title>jawaban</title>
+    </head>
+    <body>
+        <p>
+            <input type="number" id="x">
+            <br>
+            <input type="number" id="y">
+            <br>
+            <button onclick="kalkulator()">perkalian</button>
+            <button onclick="kalkulator1()">perkurangan</button>
+            <button onclick="kalkulator2()">perkurangan</button>
+            <h1 id="kalkulator",>Perkalian</h1> 
+            <h1 id="kalkulator1",>perkurangan</h1> 
+            <h1 id="kalkulator2">pertambahan</h1>
+
+        </p>
+        <script>
+            //buat fungsi kalkulator, perkalian, pengurangan, pertambahan
+            function kalkulator(){
+                var x = document.getElementById("x").value
+                var y = document.getElementById("y").value
+                document.getElementById("kalkulator").innerHTML = x * y
+            }function kalkulator1(){
+                var x = document.getElementById("x").value
+                var y = document.getElementById("y").value
+                document.getElementById("kalkulator1").innerHTML = x - y
+            }
+            function kalkulator2(){
+                var x = document.getElementById("x").value
+                var y = document.getElementById("y").value
+                document.getElementById("kalkulator2").innerHTML = x + y
+            }
+        </script>
+    </body>
+</html>
